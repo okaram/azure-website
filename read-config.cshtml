@@ -6,7 +6,7 @@
 <body>
  
 <p>Salutation: @Environment.GetEnvironmentVariable("APPSETTING_Salutation")</p>
-<p>Salutation: </p>
+<p>Salutation: @System.Configuration.ConfigurationManager.AppSettings["Salutation"]</p>
    
 </body>
 </html>
